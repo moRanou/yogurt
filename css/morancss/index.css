@@ -1,0 +1,1832 @@
+/*top的开始部分*/
+.top{
+    width: 100%;
+    height: 960px;
+    overflow: hidden;
+    background: url(../../images/moran/bg.jpg);
+    position: relative;
+}
+.top-nav{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(30, 33, 35, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    /*animation: fadeInDown 0.5s ease 1 forwards;*/
+    /*-moz-animation: fadeInDown 0.5s ease 1 forwards;*/
+    /*-webkit-animation: fadeInDown 0.5s ease 1 forwards;*/
+    /*-ms-animation: fadeInDown 0.5s ease 1 forwards;*/
+}
+.top-nav .top-l{
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    height: 93px;
+    width: 393px;
+    transition: all 0.4s;
+}
+.top-l img:nth-child(2){
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+.top-l img:nth-child(1){
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+.top-r{
+    position: absolute;
+    top: 0px;
+    right: 98px;
+    width: 1010px;
+    height: 100px;
+
+}
+.top-r li{
+    height: 100px;
+    width: 100px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.top-r li a{
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+.top-r li .big{
+    font-size: 16px;
+    display: block;
+    color: #e6e6e6;
+   padding-top: 32px;
+    margin-bottom:5px;
+}
+.top-r li .big:hover{
+    color: #FFFFFF;
+}
+.top-r li .small{
+    font-size: 12px;
+    display: block;
+    color: rgb(199, 199, 199);
+}
+.top-r li i{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    /*width: 100px;*/
+    width: 0px;
+    background-color: #01fff8;
+}
+.top-r .down{
+    padding-top: 12px;
+    height: 148px;
+    background: rgba(30,33,35,.8);
+    display: none;
+}
+.top-r .down li{
+    height: 20px;
+    margin-bottom: 16px;
+}
+.top-r .down a{
+    display: block;
+    height: 20px;
+    font-size: 16px;
+    color: #e6e6e6;
+    /*line-height: 41px;*/
+}
+.top-r .down a:hover{
+    color: #FFFFFF;
+}
+.top-r .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.icon a{
+    display: block;
+    height: 28px;
+    width: 28px;
+    float: left;
+    margin-top: 32px;
+    margin-left: 12px;
+    opacity: 0.5;
+}
+.icon a:nth-child(1){
+    background: url(../../images/moran/share_icon.png) no-repeat -2px -36px;
+}
+.icon a:nth-child(2){
+    background: url(../../images/moran/share_icon.png) no-repeat -41px -36px;
+}
+.icon a:nth-child(3){
+    background: url(../../images/moran/share_icon.png) no-repeat -82px -36px;
+}
+.icon a:nth-child(4){
+    background: url(../../images/moran/share_icon.png) no-repeat -124px -36px;
+}
+.icon a:nth-child(5){
+    width: 33px;
+    height: 33px;
+    background: url(../../images/moran/share_icon.png) no-repeat -162px -36px;
+}
+.icon .ewm{
+    position: absolute;
+    top: 100px;
+    right: 113px;
+    height: 144px;
+    width: 120px;
+    background: rgba(30,33,35,.8);
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    display: none;
+}
+.ewm img{
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+}
+.show i{
+    position: absolute;
+    bottom: -35px;
+    right: 113px;
+    height: 2px;
+    width: 120px;
+    background-color:#01fff8 ;
+    display: none;
+}
+.top .logan img{
+    width: 619px;
+    height: 107px;
+}
+ .top .logan{
+     position: absolute;
+     top: 218px;
+     left: 50%;
+     margin-left: -310px;
+     width: 619px;
+     height: 107px;
+     animation: zoomOut 0.5s 0.6s ease-out 1 forwards;
+ }
+.top .downLoad{
+    position: absolute;
+    top: 477px;
+    left: 50%;
+    margin-left: -160px; ;
+    width: 311px;
+    height: 101px;
+    background: url(../../images/moran/dl_btn.png) top no-repeat;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.top .downLoad:hover{
+    opacity: 1;
+}
+.top .rotate{
+    position: absolute;
+    left: 50%;
+    margin-left: -42px;
+    top: 370px;
+    height: 84px;
+    width: 84px;
+    /*background: url(../../images/moran/video.png) no-repeat;*/
+}
+/*.top .rotate img{*/
+    /*/!*animation-iteration-count：infinite | <number> [ , infinite | <number> ]**!/*/
+    /*transform:rotate(360deg)*/
+/*}*/
+/*实现自动旋转效果*/
+@-webkit-keyframes rotation{
+
+    from {-webkit-transform: rotate(0deg);}
+
+    to {-webkit-transform: rotate(360deg);}
+
+}
+
+.top .rotate .circle{
+    animation: rotation 2s linear infinite;
+}
+.top .rotate .play{
+    position: absolute;
+    left: 33px;
+    top: 29px;
+    cursor: pointer;
+}
+/*top的结束部分*/
+/*page的开始部分*/
+.page{
+    width: 100%;
+    height: 935px;
+    transition: all 0.4s;
+    background: url(../../images/moran/p2_bg.jpg);
+    /*padding-top: 128px;*/
+    overflow: hidden;
+
+}
+.banxin{
+    padding-top: 140px;
+    height: 705px;
+    width: 1428px;
+    margin: 0 auto;
+    position: relative;
+}
+.banxin-l {
+    height: 740px;
+    width: 465px;
+    /*background-color: red;*/
+    /*position: absolute;*/
+    /*left: -150px;*/
+
+    /*opacity: 0;*/
+
+}
+
+.banxin-l #carousel{
+    width: 465px;
+    height: 465px;
+    /*background-color: red;*/
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+#carousel ul{
+    width: 1395px;
+    height: 465px;
+    position: absolute;
+
+}
+#carousel ul img{
+    vertical-align: top;
+}
+#carousel ul li{
+    float: left;
+}
+#carousel .fix-lang{
+    height: 70px;
+    width: 465px;
+    background: rgba(0,0,0,.6);
+    font-size: 20px;
+    color: #CCCCCC;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+}
+
+#carousel .fix-lang2{
+    height: 70px;
+    width: 465px;
+    background: rgba(0,0,0,.6);
+    font-size: 20px;
+    color: #CCCCCC;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom:0px;
+    left: 465px;
+}
+#carousel .fix-lang3{
+    height: 70px;
+    width: 465px;
+    background: rgba(0,0,0,.6);
+    font-size: 20px;
+    color: #CCCCCC;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom:0px;
+    left: 930px;
+}
+#carousel .dot{
+    height: 12px;
+    width: 40px;
+    position: absolute;
+    bottom: 13px;
+    left:50%;
+    margin-left: -20px;
+}
+.dot span{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background:#838586;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.dot .current{
+    background-color: #FFFFFF;
+}
+/*tab栏    */
+.banxin-l .tab{
+    height: 225px;
+    width: 464px;
+    /*background-color: red;*/
+}
+.tab p{
+    width: 55px;
+    height: 225px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: bold;
+    background: #047372;
+    text-align: center;
+    float: left;
+}
+.tab p span{
+    width: 22px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 22px;
+}
+.tab-r{
+    width: 369px;
+    height: 100%;
+    float: left;
+    background: #151515;
+    padding: 0 20px;
+}
+.tab-r-t{
+    width: 100%;
+    height: 46px;
+    border-bottom: 1px solid #282828;
+    box-sizing: border-box;
+}
+.tab-r-t a{
+    float: left;
+    height: 42px;
+    width: 56px;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 46px;
+    text-align: center;
+    margin-right: 5px;
+}
+.tab-r-t .cur{
+    border-bottom: 3px solid #047372;
+}
+.tab-r-b{
+    height: 179px;
+    width: 369px;
+    overflow: hidden;
+    position: relative;
+}
+
+/*文字滑动的部分*/
+/*.tab-r-b .tab-slide{*/
+    /*position: absolute;*/
+    /*height: 179px;*/
+    /*width: 1476px;*/
+    /*left: 0px;*/
+    /*top: 0;*/
+/*}*/
+.tab-slide{
+    height: 179px;
+    width: 1476px;
+    position: absolute;
+}
+.tab-slide ul{
+    float: left;
+    height: 179px;
+    width: 369px;
+    font-size: 14px;
+    /*display: none;*/
+
+}
+/**/
+.tab-slide ul a{
+    color: #999;
+}
+.tab-slide ul li{
+    line-height: 38px;
+}
+.banxin-c{
+    width: 944px;
+    height: 465px;
+    position: absolute;
+    top: 140px;
+    right: 0;
+    /*opacity: 0;*/
+    transition: all 1s;
+    /*background-color: green;*/
+}
+.banxin-c .new-l{
+    height: 465px;
+    width: 465px;
+    float: left;
+}
+.banxin-c .new-r{
+    height: 465px;
+    width: 465px;
+    float: right;
+}
+.newsone{
+    float: left;
+    height: 225px;
+    width: 225px;
+    background: url(../../images/moran/b1.png)center repeat ;
+    position: relative;
+}
+.newsone .newp1{
+    height: 30px;
+    width: 150px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #05F4F8;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+.newp1 .right-icon{
+  vertical-align: middle;
+    display: inline-block;
+    height: 13px;
+    width: 7px;
+    background: url(../../images/moran/right.png) no-repeat;
+}
+.newsone .newp2{
+    margin-top: 12px;
+    height: 26px;
+    width: 146px;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 26px;
+}
+.newp2 .btn-icon{
+    vertical-align: top;
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    background: url(../../images/moran/plus.png) no-repeat;
+}
+@-webkit-keyframes rotation{
+
+    from {-webkit-transform: rotate(0deg);}
+
+    to {-webkit-transform: rotate(360deg);}
+
+}
+
+.newp2 .btn-icon{
+    animation: rotation 2s linear infinite;
+}
+
+
+
+
+.newstwo{
+    float: right;
+    width: 185px;
+    height: 225px;
+    background: url(../../images/moran/b2.png) center repeat;
+    position: relative;
+    padding: 0 20px;
+}
+.newstwo:hover .biaoti {
+    color: #01FFF8;
+}
+.newstwo p:nth-child(1){
+    margin-top: 70px;
+    height: 40px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.newstwo p:nth-child(2){
+    height: 18px;
+    font-size: 12px;
+    color: #7F8993;
+}
+.newstwo p:nth-child(3){
+    height: 30px;
+    font-size: 12px;
+    color: #7F8993;
+}
+.newstwo p:nth-child(4){
+    font-size: 12px;
+    color: #106258;
+}
+.newstwo .notice{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    height: 20px;
+    width: 50px;
+    background-color: #0e4950;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+
+
+.newsthree{
+    margin-top: 15px;
+    float: left;
+    width: 185px;
+    height: 225px;
+    background: url(../../images/moran/b2.png) center repeat;
+    position: relative;
+    padding: 0 20px;
+}
+.newsthree:hover .biaoti {
+    color: #01FFF8;
+}
+.newsthree p:nth-child(1){
+    margin-top: 70px;
+    height: 40px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.newsthree p:nth-child(2){
+    height: 18px;
+    font-size: 12px;
+    color: #7F8993;
+}
+.newsthree p:nth-child(3){
+    height: 30px;
+    font-size: 12px;
+    color: #7F8993;
+}
+.newsthree p:nth-child(4){
+    font-size: 12px;
+    color: #106258;
+}
+.newsthree .notice{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    height: 20px;
+    width: 50px;
+    background-color: #0e4950;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.newsfour{
+    margin-top: 15px;
+    float: right;
+    width: 185px;
+    height: 225px;
+    background: url(../../images/moran/b2.png) center repeat;
+    position: relative;
+    padding: 0 20px;
+}
+.newsfour:hover .biaoti {
+    color: #01FFF8;
+}
+.newsfour p:nth-child(1){
+    margin-top: 70px;
+    height: 40px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.newsfour p:nth-child(2){
+    height: 18px;
+    font-size: 12px;
+    color: #7F8993;
+}
+.newsfour p:nth-child(3){
+    height: 30px;
+    font-size: 12px;
+    color: #7F8993;
+}
+.newsfour p:nth-child(4){
+    font-size: 12px;
+    color: #106258;
+}
+.newsfour .notice{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    height: 20px;
+    width: 50px;
+    background-color: #0e4950;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+.new-r {
+    height: 465px;
+    width: 465px;
+    /*background-color: red;*/
+    float: right;
+}
+
+/*游戏直播*/
+.game{
+    float: left;
+    height: 225px;
+    width: 225px;
+    background: url(../../images/moran/b1.png)center repeat ;
+    position: relative;
+}
+.game .newp1{
+    height: 30px;
+    width: 150px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #05F4F8;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+ .game.newp1 .right-icon{
+    vertical-align: middle;
+    display: inline-block;
+    height: 13px;
+    width: 7px;
+    background: url(../../images/moran/right.png) no-repeat;
+}
+.game .newp2{
+    margin-top: 12px;
+    height: 26px;
+    width: 146px;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 26px;
+}
+ .game .newp2 .btn-icon{
+    vertical-align: top;
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    background: url(../../images/moran/plus.png) no-repeat;
+}
+
+.huya{
+    float: right;
+    height: 225px;
+    width: 225px;
+    background: url(../../images/moran/b2.png) center repeat;
+}
+.huya .th-box{
+    width: 225px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.huya .zhezhao{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+    width: 225px;
+    height: 150px;
+    opacity: 0;
+    background: rgba(0,0,0,0.8);
+
+}
+.th-box .btncut{
+    position: absolute;
+    top: 50%;
+    margin-top: -22.5px;
+    left: 50%;
+    margin-left: -22.5px;
+    height: 55px;
+    width: 55px;
+    background: url(../../images/moran/v_icon.png);
+    opacity: 0;
+}
+.th-box img{
+    transition:all 0.5s;
+}
+.th-box:hover img{
+    transform:scale(1.2)
+
+}
+.huya p:nth-child(2){
+    color: #999;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+.huya p:nth-child(3){
+    color: #999;
+    font-size: 14px;
+    margin-left: 16px;
+    background: url(../../images/moran/man.png) no-repeat left center;
+    padding-left: 13px;
+}
+
+
+
+
+.kaka{
+    margin-top: 16px;
+    float: left;
+    height: 225px;
+    width: 225px;
+    background: url(../../images/moran/b2.png) center repeat;
+}
+.kaka .th-box2{
+    width: 225px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.kaka .zhezhao{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+    width: 225px;
+    height: 150px;
+    opacity: 0;
+    background: rgba(0,0,0,0.8);
+
+}
+.th-box2 .btncut{
+    position: absolute;
+    top: 50%;
+    margin-top: -22.5px;
+    left: 50%;
+    margin-left: -22.5px;
+    height: 55px;
+    width: 55px;
+    background: url(../../images/moran/v_icon.png);
+    opacity: 0;
+}
+.th-box2 img{
+    transition:all 0.5s;
+}
+.th-box2:hover img{
+    transform:scale(1.2)
+
+}
+.kaka p:nth-child(2){
+    color: #999;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+.kaka p:nth-child(3){
+    color: #999;
+    font-size: 14px;
+    margin-left: 16px;
+    background: url(../../images/moran/man.png) no-repeat left center;
+    padding-left: 13px;
+}
+
+
+
+.liejiu{
+    margin-top: 16px;
+    float: right;
+    height: 225px;
+    width: 225px;
+    background: url(../../images/moran/b2.png) center repeat;
+}
+.liejiu .th-box3{
+    width: 225px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.liejiu .zhezhao{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+    width: 225px;
+    height: 150px;
+    opacity: 0;
+    background: rgba(0,0,0,0.8);
+
+}
+.th-box3 .btncut{
+    position: absolute;
+    top: 50%;
+    margin-top: -22.5px;
+    left: 50%;
+    margin-left: -22.5px;
+    height: 55px;
+    width: 55px;
+    background: url(../../images/moran/v_icon.png);
+    opacity: 0;
+}
+.th-box3 img{
+    transition:all 0.5s;
+}
+.th-box3:hover img{
+    transform:scale(1.2)
+
+}
+.liejiu p:nth-child(2){
+    color: #999;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+.liejiu p:nth-child(3){
+    color: #999;
+    font-size: 14px;
+    margin-left: 16px;
+    background: url(../../images/moran/man.png) no-repeat left center;
+    padding-left: 13px;
+}
+
+.banxin-b {
+    width: 945px;
+    height: 225px;
+    /*background-color: red;*/
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+
+/*.banxin-b .link{*/
+    /*height: 225px;*/
+    /*width: 225px;*/
+    /*margin-right: 11px;*/
+    /*float: left;*/
+/*}*/
+/*.banxin-b .rai{*/
+    /*width: 225px;*/
+    /*height: 225px;*/
+    /*position: relative;*/
+    /*transform-style: preserve-3d;*/
+    /*transition: all 0.5s;*/
+/*}*/
+/*.rai::before, .rai::after {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url(../../images/moran/r1.png) no-repeat ;*/
+    /*/!*background-repeat: no-repeat;*!/*/
+/*}*/
+
+/*.rai::before {*/
+    /*background-position: right top;*/
+    /*transform: rotateY(180deg);*/
+/*}*/
+
+/*.rai::after {*/
+    /*background-position: left top;*/
+    /*transform: translateZ(2px);*/
+/*}*/
+
+/*.rai:hover {*/
+    /*transform: rotateY(180deg);*/
+/*}*/
+
+.banxin-b .rai{
+    width: 225px;
+    height: 225px;
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+.rai .pos {
+    position: absolute;
+    height: 225px;
+    width: 225px;
+    float: left;
+    background: url(../../images/moran/r1.png) no-repeat 0px 0px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    /*隐藏被旋转的背面*/
+    backface-visibility: hidden;
+    transform: rotateY( 0deg );
+}
+
+.rai .neg {
+    position: absolute;
+    height: 225px;
+    width: 225px;
+    background: url(../../images/moran/r1.png) no-repeat -225px 0px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateY( -180deg );
+}
+.rai:hover .pos{
+    transform: rotateY( 180deg );
+}
+.rai:hover .neg{
+    transform: rotateY( 0deg );
+}
+
+
+
+.banxin-b .data{
+    width: 225px;
+    height: 225px;
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+.data .pos {
+    position: absolute;
+    height: 225px;
+    width: 225px;
+    float: left;
+    background: url(../../images/moran/r2.png) no-repeat 0px 0px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    /*隐藏被旋转的背面*/
+    backface-visibility: hidden;
+    transform: rotateY( 0deg );
+}
+
+.data .neg {
+    position: absolute;
+    height: 225px;
+    width: 225px;
+    background: url(../../images/moran/r2.png) no-repeat -225px 0px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateY( -180deg );
+}
+.data:hover .pos{
+    transform: rotateY( 180deg );
+}
+.data:hover .neg{
+    transform: rotateY( 0deg );
+}
+
+
+.banxin-b .for{
+    width: 225px;
+    height: 225px;
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+.for .pos {
+    position: absolute;
+    height: 225px;
+    width: 225px;
+    float: left;
+    background: url(../../images/moran/r3.png) no-repeat 0px 0px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    /*隐藏被旋转的背面*/
+    backface-visibility: hidden;
+    transform: rotateY( 0deg );
+}
+
+.for .neg {
+    position: absolute;
+    height: 225px;
+    width: 225px;
+    background: url(../../images/moran/r3.png) no-repeat -225px 0px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateY( -180deg );
+}
+.for:hover .pos{
+    transform: rotateY( 180deg );
+}
+.for:hover .neg{
+    transform: rotateY( 0deg );
+}
+/*第四个旋转*/
+.banxin-b .jion{
+    width: 225px;
+    height: 225px;
+    position: relative;
+    display: block;
+    float: left;
+}
+.jion .jionpos{
+    position: absolute;
+    display: block;
+    height: 225px;
+    width: 225px;
+    background: url(../../images/moran/r4.png) no-repeat 0px 0px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform:rotateY(0deg)
+}
+
+.jion .jionneg {
+    position: absolute;
+    height: 225px;
+    width: 225px;
+    background: url(../../images/moran/r4.png) no-repeat -225px 0px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateY( -180deg );
+}
+.jion:hover .jionpos{
+    transform: rotateY( 180deg );
+}
+.jion:hover .jionneg{
+    transform: rotateY( 0deg );
+}
+
+.jionneg .wx{
+    height: 78px;
+    width: 78px;
+    position: absolute;
+    top: 26px;
+    left: 25px;
+    border: 1px solid #36908f;
+}
+.jionneg .wx span{
+    height: 28px;
+    width: 33px;
+    position: absolute;
+    left: 50%;
+    margin-left: -16.5px;
+    top: 50%;
+    margin-top: -14px;
+    background: url(../../images/moran/join_icon.png) no-repeat 0px 0px;
+}
+
+.jionneg .wb{
+    height: 78px;
+    width: 78px;
+    position: absolute;
+    bottom:26px;
+    left: 25px;
+    border: 1px solid #36908f;
+}
+.jionneg .wb span{
+    height: 30px;
+    width: 33px;
+    position: absolute;
+    left: 50%;
+    margin-left: -16.5px;
+    top: 50%;
+    margin-top: -14px;
+    background: url(../../images/moran/join_icon.png) no-repeat -44px 0px;
+}
+
+.jionneg .qq{
+    height: 78px;
+    width: 78px;
+    position: absolute;
+    top:26px;
+    right: 25px;
+    border: 1px solid #36908f;
+}
+.jionneg .qq span{
+    height: 30px;
+    width: 33px;
+    position: absolute;
+    left: 50%;
+    margin-left: -16.5px;
+    top: 50%;
+    margin-top: -14px;
+    background: url(../../images/moran/join_icon.png) no-repeat -90px 0px;
+}
+.jionneg .tb{
+    height: 78px;
+    width: 78px;
+    position: absolute;
+    bottom:26px;
+    right: 25px;
+    border: 1px solid #36908f;
+}
+.jionneg .tb span{
+    height: 30px;
+    width: 33px;
+    position: absolute;
+    left: 50%;
+    margin-left: -16.5px;
+    top: 50%;
+    margin-top: -14px;
+    background: url(../../images/moran/join_icon.png) no-repeat -128px 0px;
+}
+.jionneg .wx:hover {
+    background-color: rgba(200,203,203,0.5);
+}
+.jionneg .wb:hover {
+    background-color: rgba(200,203,203,0.5);
+}
+.jionneg .qq:hover {
+    background-color: rgba(200,203,203,0.5);
+}
+.jionneg .tb:hover {
+    background-color: rgba(200,203,203,0.5);
+}
+/*page的结束部分*/
+
+/*book的开始部分*/
+.handbook{
+    height: 908px;
+    width: 100%;
+    /*margin: 0 auto;*/
+    /*overflow: hidden;*/
+    overflow: hidden;
+    background: url(../../images/moran/p3_bg.jpg);
+}
+.book{
+    height: 908px;
+    width: 1428px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.book .guide{
+    position: absolute;
+    top: 138px;
+    left: 50%;
+    margin-left: -100px;
+}
+.book .book-border{
+    height: 417px;
+    width: 1306px;
+    position: absolute;
+    left: 50%;
+    margin-left: -653px;
+    top: 254px;
+    background: url(../../images/moran/border.png);
+}
+.book .character{
+    position: absolute;
+    top: 293px;
+    left: 170px;
+    height: 330px;
+    width: 434px;
+    /*background-color: red;*/
+    transition: all 1s ease;
+}
+.character .en{
+    color: #b88b50;
+    font-size: 20px;
+    line-height: 20px;
+}
+.character h3{
+    color: #3d2300;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 14px 0 26px 0;
+}
+.character p {
+    color: #645238;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.character .last{
+    color: #645238;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+
+/*one*/
+
+.book .character-one{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    height: 330px;
+    width: 434px;
+    /*background-color: red;*/
+    opacity: 0;
+    transition: all 1s ease;
+}
+.character-one .en{
+    color: #b88b50;
+    font-size: 20px;
+    line-height: 20px;
+}
+.character-one h3{
+    color: #3d2300;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 14px 0 26px 0;
+}
+.character-one p {
+    color: #645238;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.character-one .last{
+    color: #645238;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+/*two*/
+.book .character-two{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    height: 330px;
+    width: 434px;
+    /*background-color: red;*/
+    transition: all 1s ease;
+    opacity: 0;
+}
+.character-two .en{
+    color: #b88b50;
+    font-size: 20px;
+    line-height: 20px;
+}
+.character-two h3{
+    color: #3d2300;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 14px 0 26px 0;
+}
+.character-two p {
+    color: #645238;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.character-two .last{
+    color: #645238;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+/*three*/
+.book .character-three{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    height: 330px;
+    width: 434px;
+    /*background-color: red;*/
+    transition: all 1s ease;
+    opacity: 0;
+}
+.character-three .en{
+    color: #b88b50;
+    font-size: 20px;
+    line-height: 20px;
+}
+.character-three h3{
+    color: #3d2300;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 14px 0 26px 0;
+}
+.character-three p {
+    color: #645238;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.character-three .last{
+    color: #645238;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+/*four*/
+
+.book .character-four{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    height: 330px;
+    width: 434px;
+    transition: all 1s ease;
+    /*background-color: red;*/
+    opacity: 0;
+}
+.character-four .en{
+    color: #b88b50;
+    font-size: 20px;
+    line-height: 20px;
+}
+.character-four h3{
+    color: #3d2300;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 14px 0 26px 0;
+}
+.character-four p {
+    color: #645238;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.character-four .last{
+    color: #645238;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+/*five*/
+
+.book .character-five{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    height: 330px;
+    width: 434px;
+    /*background-color: red;*/
+    transition: all 1s ease;
+    opacity: 0;
+}
+.character-five .en{
+    color: #b88b50;
+    font-size: 20px;
+    line-height: 20px;
+}
+.character-five h3{
+    color: #3d2300;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 14px 0 26px 0;
+}
+.character-five p {
+    color: #645238;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.character-five .last{
+    color: #645238;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+/*six*/
+
+.book .character-six{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    height: 330px;
+    width: 434px;
+    /*background-color: red;*/
+    transition: all 1s ease;
+    opacity: 0;
+}
+.character-six .en{
+    color: #b88b50;
+    font-size: 20px;
+    line-height: 20px;
+}
+.character-six h3{
+    color: #3d2300;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 14px 0 26px 0;
+}
+.character-six p {
+    color: #645238;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.character-six .last{
+    color: #645238;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+/*seven*/
+
+.book .character-seven{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    height: 330px;
+    width: 434px;
+    /*background-color: red;*/
+    transition: all 1s ease;
+    opacity: 0;
+}
+.character-seven .en{
+    color: #b88b50;
+    font-size: 20px;
+    line-height: 20px;
+}
+.character-seven h3{
+    color: #3d2300;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 14px 0 26px 0;
+}
+.character-seven p {
+    color: #645238;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.character-seven .last{
+    color: #645238;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+/*eight*/
+
+.book .character-eight{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    height: 330px;
+    width: 434px;
+    opacity: 0;
+    transition: all 1s ease;
+    /*background-color: red;*/
+}
+.character-eight .en{
+    color: #b88b50;
+    font-size: 20px;
+    line-height: 20px;
+}
+.character-eight h3{
+    color: #3d2300;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 14px 0 26px 0;
+}
+.character-eight p {
+    color: #645238;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.character-eight .last{
+    color: #645238;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+/*nine*/
+.book .character-nine{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    height: 330px;
+    width: 434px;
+    /*background-color: red;*/
+    opacity: 0;
+    transition: all 1s ease;
+}
+.character-nine .en{
+    color: #b88b50;
+    font-size: 20px;
+    line-height: 20px;
+}
+.character-nine h3{
+    color: #3d2300;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 14px 0 26px 0;
+}
+.character-nine p {
+    color: #645238;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.character-nine .last{
+    color: #645238;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+
+.dinosaur{
+    width: 1000px;
+    height: 700px;
+    position: absolute;
+    top: 100px;
+    right: -200px;
+    /*background-color: red;*/
+}
+.dinosaur img.current{
+    position: absolute;
+    top: 213px;
+    right: 100px;
+    /*display: block;*/
+    opacity: 1;
+    /*transition: none;*/
+    transition:all 1s ease ;
+    /*transform: rotate(360deg);*/
+}
+.dinosaur img{
+    position: absolute;
+    top: 800px;;
+    right: 300px;
+    /*display: none;*/
+    opacity: 0;
+    transition: none;
+    /*transition:all 1s ease-out ;*/
+
+}
+/*.book .btnleft{*/
+    /*position: absolute;*/
+    /*height: 60px;*/
+    /*width: 61px;*/
+    /*top: 428px;*/
+    /*left: 206px;*/
+    /*background: url(../../images/moran/arrow_s.png) 0px 0px ;*/
+/*}*/
+/*.book .btnright{*/
+    /*position: absolute;*/
+    /*height: 60px;*/
+    /*width: 61px;*/
+    /*top: 428px;*/
+    /*right: 206px;*/
+    /*background: url(../../images/moran/arrow_s.png) 129px 0px ;*/
+/*}*/
+.book .picture{
+    height: 80px;
+    width: 1028px;
+    position: absolute;
+    bottom: 108px;
+    left: 50%;
+    margin-left: -514px;
+    /*background-color:#01fff8;*/
+}
+.picture span{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin: 0 5px;
+}
+.picture span:nth-child(1){
+    background: url(../../images/moran/icon.png) 0 -96px ;
+}
+.picture span:nth-child(2){
+    background: url(../../images/moran/icon.png) -96px -96px ;
+}
+.picture span:nth-child(3){
+     background: url(../../images/moran/icon.png) -192px -96px ;
+ }
+.picture span:nth-child(4){
+      background: url(../../images/moran/icon.png) -288px -96px ;
+  }
+.picture span:nth-child(5){
+       background: url(../../images/moran/icon.png) -384px -96px ;
+   }
+.picture span:nth-child(6){
+        background: url(../../images/moran/icon.png) -480px -96px ;
+    }
+.picture span:nth-child(7){
+         background: url(../../images/moran/icon.png) -576px -96px ;
+     }
+.picture span:nth-child(8){
+          background: url(../../images/moran/icon.png) -672px -96px ;
+      }
+.picture span:nth-child(9){
+           background: url(../../images/moran/icon.png) -768px -96px ;
+       }
+.picture span:nth-child(10){
+            background: url(../../images/moran/icon.png) -864px -96px ;
+        }
+.picture span:nth-child(11){
+             background: url(../../images/moran/icon.png) -960px -96px ;
+         }
+/*book的结束部分*/
+/*lastPage的开始部分*/
+.lastPage{
+    height: 984px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../../images/moran/p4_bg.jpg);
+    position: relative;
+}
+.lastPage-bx{
+    height: 984px;
+    width: 1304px;
+    margin: 0 auto;
+}
+.lastPage .t4{
+    position: absolute;
+    top: 142px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.lastPage span:nth-child(1){
+    position: absolute;
+    top: 526px;
+    left: 208px;
+    height: 60px;
+    width: 60px;
+    background: url(../../images/moran/arrow.png) 0 0;
+    cursor: pointer;
+}
+.lastPage span:nth-child(2){
+    position: absolute;
+    top: 526px;
+    right: 208px;
+    height: 60px;
+    width: 60px;
+    background: url(../../images/moran/arrow.png) -155px 0;
+    cursor: pointer;
+}
+.sb-slider{
+    position: absolute;
+    top: 275px;
+    left: 0px;
+}
+.sb-slider p{
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: 900;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -129px;
+}
+.sb-slider span{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -83px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+/*lastPage的结束部分*/
+/*宣传的开始部分*/
+.advertise{
+    width: 100%;
+    height: 569px;
+    background: url(../../images/moran/p5_bg.jpg);
+    overflow: hidden;
+}
+.advertise .w{
+    height: 569px;
+    width: 1428px;
+    margin: 0 auto;
+    /*background: #0094ff;*/
+    position: relative;
+}
+.w .start{
+    position: absolute;
+    top: 101px;
+    left: 50%;
+    margin-left: -320px;
+}
+.w .erweima{
+    position: absolute;
+    top: 230px;
+    left: 39%;
+    margin-left: -100px; ;
+}
+.w .downdown{
+    height: 94px;
+    width: 309px;
+    background: url(../../images/moran/dl_btn.png) 0 0;
+    position: absolute;
+    top: 230px;
+    margin-left: 654px;
+}
+.w .attention{
+    position: absolute;
+    top: 332px;
+    left: 658px;
+}
+.w .login{
+    height: 42px;
+    width: 309px;
+    /*background-color: red;*/
+    position: absolute;
+    top: 374px;
+    left: 658px;;
+}
+.login a:nth-child(1){
+    position: absolute;
+    left: 60px;
+    top: 0;
+    width: 44px;
+    height: 43px;
+    background: url(../../images/moran/dl_icon.png) 0 0 ;
+}
+.login a:nth-child(2){
+    position: absolute;
+    left: 131px;
+    top: 0;
+    width: 44px;
+    height: 43px;
+    background: url(../../images/moran/dl_icon.png) -44px 0 ;
+}
+.login a:nth-child(3){
+    position: absolute;
+    left: 204px;
+    top: 0;
+    width: 44px;
+    height: 43px;
+    background: url(../../images/moran/dl_icon.png) -87px 0 ;
+}
+.company{
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    background:#f0f0f5;
+}
+.company .last-w{
+    width: 1428px;
+    height: 150px;
+    /*background-color: red;*/
+    margin: 0 auto;
+    position: relative;
+}
+.last-w p{
+    color: #8C8C8C;
+    font-size:16px;
+}
+.last-w p:nth-child(1){
+    position: absolute;
+    top: 54px;
+    left: 124px;
+}
+.last-w p:nth-child(2){
+    position: absolute;
+    top: 87px;
+    left: 124px;
+}
+/*宣传的结束部分*/
